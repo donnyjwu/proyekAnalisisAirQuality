@@ -157,7 +157,7 @@ with tab3:
 st.subheader('Data Jumlah pengguna Bike Sharing setiap bulannya')
 fig, ax = plt.subplots(figsize=(65, 35))
 
-colors = ["#4287f5", "#030bfc", "#42f551", "#d742f5", "#4287f5", "#030bfc", "#42f551", "#d742f5", "#4287f5", "#030bfc", "#42f551", "#d742f5"]
+colors = ["#030bfc", "#030bfc", "#030bfc", "#030bfc", "#030bfc", "#fc6203", "#fc6203", "#fc6203", "#fc6203", "#030bfc", "#030bfc", "#030bfc"]
 
 sns.barplot(x="mnth", y="total_users", data=monthly_user_df, palette=colors)
 ax.set_ylabel(None)
@@ -168,7 +168,7 @@ ax.tick_params(axis='x', labelsize=30)
 
 st.pyplot(fig)
 
-st.subheader('Data Jumlah pengguna Bike Sharing setiap bulannya')
+st.subheader('Data Jumlah pengguna harian Bike Sharing ')
 st.line_chart(
    daily_users_df, x="dteday", y="total_users", color="#FF0000"  # Optional
 )
